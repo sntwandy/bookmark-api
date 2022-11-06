@@ -7,7 +7,12 @@ import { AuthService } from './auth/auth.service';
 import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
-  imports: [AuthModule, UserModule, BookmarkModule, PrismaModule],
+  imports: [
+    AuthModule,
+    UserModule,
+    BookmarkModule,
+    PrismaModule,
+  ],
   controllers: [AuthController],
   providers: [AuthService],
 })
